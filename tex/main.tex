@@ -14,12 +14,15 @@
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage{esint}
 
-\newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{$#1$}}}}
+\newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{$\mathrm#1$}}}}
+\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+\newcommand{\total}[1]{\mathrm{d}#1}
 \newcommand{\ee}{\end{equation}}
 \newcommand{\be}{\begin{equation}}
+\DeclareMathOperator{\sign}{sign}
 
 \title{Physics notes}
-\author{Antonio Astorino, PhD}
+\author{Antonio, Liliia}
 
 \begin{document}
 \maketitle
@@ -28,20 +31,7 @@
 Your abstract.
 \end{abstract}
 
-
-\include{chapters/gausss-law.tex}
-
-
-
-
-
-
-
-
-
-
-
-
-
+\input{chapters/electric-filed.tex}
+\input{chapters/gausss-law.tex}
 
 \end{document}
