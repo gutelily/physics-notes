@@ -13,9 +13,15 @@
 \usepackage{graphicx}
 \usepackage[colorlinks=true, allcolors=blue]{hyperref}
 \usepackage{esint}
+\usepackage{physics}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage[outline]{contour}
+\usepackage{xcolor}
+\input{lib/graph-commands.tex}
 
 \newcommand{\uvec}[1]{\boldsymbol{\hat{\textbf{$\mathrm#1$}}}}
-\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
+% \newcommand{\norm}[1]{\left\lVert#1\right\rVert}
 \newcommand{\total}[1]{\mathrm{d}#1}
 \newcommand{\ee}{\end{equation}}
 \newcommand{\be}{\begin{equation}}
@@ -31,7 +37,7 @@
 Your abstract.
 \end{abstract}
 
-\input{chapters/electric-filed.tex}
+\input{chapters/electric-field.tex}
 \input{chapters/gausss-law.tex}
 
 \end{document}

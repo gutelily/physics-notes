@@ -1,0 +1,32 @@
+\begin{figure}
+	\centering
+\tdplotsetmaincoords{60}{110}
+\begin{tikzpicture}[scale=2,tdplot_main_coords]\tikzset{>=latex}
+  
+  % VARIABLES
+  \def\xq{2.6}
+  \def\yq{3}
+  \def\zq{2.8}
+  \def\xQ{2.4}
+  \def\yQ{0.2}
+  \def\zQ{2.4}
+  \def\s{0.3}
+  \coordinate (r_q) at (\xq,\yq,\zq);
+  \coordinate (r_Q) at (\xQ,\yQ,\zQ);
+  % AXES
+  \coordinate (O) at (0,0,0);
+  \axesthree{2}
+  
+  % VECTOR
+  \draw[->](O) -- node[below right] {$\mathbf{r}_{q}$} (r_q) ;
+  \draw[->](O) -- node[left] {$\mathbf{r}_{Q}$} (r_Q);
+  \node at (r_q)[circle,fill,inner sep=1.5pt]{}; 
+  \node at (r_Q)[circle,fill,inner sep=1.5pt]{};
+  \node at (r_q)[above]{$q$};
+  \node at (r_Q)[above]{$Q$}; 
+  \draw[->](r_Q) --  node[above left] {$\mathbf{r}$} (r_q);
+  \draw[->][thick](r_q) -- +($(\xq*\s, \yq*\s,\zq*\s)-(\xQ*\s, \yQ*\s,\zQ*\s)$) node[above] {$\mathbf{F}_{q,Q}$};
+
+\end{tikzpicture}
+	\caption{Electric force exerted by $Q$ on $q$.} \label{fig:two-point-charges}
+\end{figure}
