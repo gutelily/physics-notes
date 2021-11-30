@@ -1,28 +1,31 @@
 \section{Infinite plane}
-An infinite plane with charge density per unit of area $\sigma$ in empty space, located on the x-y plane is given. Due to the symmetry of a
+An infinite plane with charge density per unit of area $\sigma$ in empty space, located on the $XY$-plane is given. Due to the symmetry of a
 system, the electric field is constant and in the direction of the $z$-axis.
 
 
 \be\label{infinite-plane-e-field}
-\mathbf{E} = E_{z}(z) \cdot \uvec{z} = E_z \cdot \frac{z}{|z|}\uvec{z}
+\mathbf{E} = E_{z}(z)\uvec{z} = E_{z}(\sign(z))\uvec{z}
 \ee
 
 By replacing \ref{infinite-plane-e-field} in \ref{gauss-law}, we can write
 \be\label{infinite-plane-flux}
-\oiint_A E_{z}(z) \cdot \uvec{z} \cdot \mathrm{d}\mathbf{A} =\frac{Q_{encl}}{\epsilon_0}
+\oiint_A E_{z}(\sign(z))\uvec{z} \cdot \mathrm{d}\mathbf{A} =\frac{Q_{encl}}{\epsilon_0}
 \ee
 where $\mathrm{d}\mathbf{A} = \mathrm{d}x \mathrm{d}y$ is infinitesimal area with the direction normal to the surface and parallel to the
 $z$-axis.
 
-Considering a parallelepiped centered at the location of the charged plane, the only contributions to the flux are those that are parallel
-to $z$-axis,
+Considering a parallelepiped centered at the location of the charged plane, the total flux equals to the sum of the fluxes of each face. 
 
-% add info about all faces and 6 integrals -- everything in your notes + needed descriptions
-
+\be
+\Phi_{E_{tot}}=\Phi_{x_{+}}+\Phi_{x_{+}}+\Phi_{y_{+}}+\Phi_{y_{+}}+\Phi_{z_{+}}+\Phi_{z_{-}}
+\ee
+Flux is calculted as a dot product between $\mathbf{E}$ and $\total{\mathbf{A}}$, but because electric field is in the $z$-direction, the contributions to the flux in $x$- and $y$-direction are zero. So we have
 \be\label{}
-\oiint_A E_z \cdot \frac{z}{|z|}\uvec{z} \cdot \mathrm{d}x\mathrm{d}y\uvec{z} + \oiint_A E_z \cdot \frac{-z}{|z|}\uvec{z} \cdot \mathrm{d}x\mathrm{d}y\uvec{z} = \frac{Q}{\epsilon_0}
+\oiint_A E_z\frac{z}{|z|}\uvec{z} \cdot\uvec{z} \total{x}\total{y}+
+\oiint_A E_z\frac{-z}{|z|}\uvec{z} \cdot\uvec{z} \total{x}\total{y}
+=\frac{Q}{\epsilon_0}
 \ee
 from which
 \be
-\mathbf{E}=\frac{\sigma}{2\epsilon_0} \cdot \frac{z}{|z|} \uvec{r}
+\mathbf{E}=\frac{\sigma}{2\epsilon_0}\sign(z)\uvec{z}
 \ee
