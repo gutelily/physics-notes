@@ -1,0 +1,33 @@
+\section{Infinite plane}
+An infinite plane with charge density per unit of area $\sigma$ in empty space, located on the $XY$-plane is given. Due to the symmetry of the 
+system, the electric field strength is constant and points away from the plane, orthogonally to the plane.
+
+
+\be\label{infinite-plane-e-field}
+\mathbf{E} = E_{z}(z)\uvec{z} = E_{z}(\sign(z))\uvec{z}
+\ee
+
+By replacing \ref{infinite-plane-e-field} in \ref{gauss-law}, we can write
+\be\label{infinite-plane-flux}
+\oiint_A E_{z}(\sign(z))\uvec{z} \cdot \total{\mathbf{A}} =\frac{Q_{encl}}{\epsilon_0}
+\ee
+
+Considering a parallelepiped whose faces are on the planes $x=x_{0}$, $x=-x_{0}$, $y=y_{0}$, $y=-y_{0}$, $z=z_{0}$, $z=-z_{0}$, where $x_{0}$, $y_{0}$, and $z_{0}$ are positive real numbers. The total flux equals to the sum of the fluxes of each face. 
+
+\be\label{eq:parallelepiped-fluxes}
+\Phi_{E_{tot}}=\Phi_{x_{+}}+\Phi_{x_{-}}+\Phi_{y_{+}}+\Phi_{y_{-}}+\Phi_{z_{+}}+\Phi_{z_{-}}
+\ee
+
+The subscripts in \ref{eq:parallelepiped-fluxes} denote the directions of the face normals, e.g.
+$x_{+}$ stands for "positive $x$-direction", $x_{-}$ stands for "negative $x$-direction", and so on.
+
+The flux is calculated as the dot product between $\mathbf{E}$ and $\total{\mathbf{A}}$, but because electric field is in the $z$-direction, the contributions to the flux in $x$- and $y$-directions are zero. Therefore, we have
+\be\label{}
+\iint_{top} E_z\sign(z_{0})\uvec{z} \cdot\uvec{z} \total{x}\total{y}+
+\iint_{bottom} E_z\sign(-z_{0})\uvec{z} \cdot(-\uvec{z}) \total{x}\total{y}
+=\frac{4\sigma x_{0}y_{0}}{\epsilon_0}
+\ee
+from which
+\be
+\mathbf{E}=\frac{\sigma}{2\epsilon_0}\sign(z)\uvec{z}
+\ee

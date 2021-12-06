@@ -1,0 +1,23 @@
+\section{Infinitely long, straight wire}
+An infinitely long, straight wire with charge density per unit of length $\lambda$ in empty space is located along the $z$-axis of the 
+cylindrical system of reference $(\rho, \theta, z)$. Due to the cylindrical symmetry of the system, the electric field
+$\mathbf{E}(\rho,\theta,z)$ cannot depend on $\theta$ and $z$. In addition, the electric field must be in the direction of $\uvec{\rho}$. 
+Hence, we can write
+\be\label{cylindrically-symmetric-e-field}
+\mathbf{E} = E_{\rho}(\rho)\uvec{\rho}
+\ee
+
+By replacing \ref{cylindrically-symmetric-e-field} in \ref{gauss-law}, we can write
+\be\label{cylindrically-symmetric-flux}
+\oiint_A E_{\rho}(\rho) \cdot \uvec{\rho} \cdot \mathrm{d}\mathbf{A} =\frac{Q_{encl}}{\epsilon_0}
+\ee
+where $\mathrm{d}\mathbf{A} =  \rho\total{\theta} \total{z}\uvec{\rho}$ is an infinitesimal area with the direction of $\uvec{\rho}$.
+
+Considering as Gaussian surface a cylinder of hight $h$, whose axis is located along the $z$-axis, \ref{cylindrically-symmetric-flux} becomes,
+\be\label{cylindrically-symmetric-flux-2}
+\oiint_A E_{\rho}(\rho) \uvec{\rho}\cdot\uvec{\rho} \rho \total{\theta}\total{z}=\frac{\lambda h}{\epsilon_0}
+\ee
+from which
+\be
+\mathbf{E}=\frac{\lambda}{2\pi\rho\epsilon_0}\uvec{\rho}
+\ee

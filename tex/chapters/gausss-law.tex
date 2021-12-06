@@ -1,54 +1,12 @@
 
 \chapter{Gauss's law}
-Given an electric field $\mathbf{E}(\mathbf{r})$ and a closed surface $A$, according to Gauss's law
-\be\label{gauss-law}
-\Phi_E = \oiint_A \mathbf{E} \cdot \mathrm{d}\mathbf{A} =\frac{Q_{encl}}{\epsilon_0}
-\ee
-where $Q_{encl}$ is the total charge enclosed in $A$, $\mathrm{d}\mathbf{A}=\mathrm{d}A\uvec{A}$ is an infinitesimal area $\mathrm{d}A$ with direction $\uvec{A}$, the latter defined as the normal of the surface at the point under consideration.
-
-\section{Calculation of electric field using Gauss's law}
-\subsection{Point-like charge}
-Given a particle with charge $q$ in empty space, due to the spherical symmetry of the system, the electric field $\mathbf{E}(r,\theta,\phi)$ cannot depend on $\theta$ and $\phi$. In addition, the electric field must be in the direction of $\uvec{r}$. Hence, we can write
-\be\label{spherically-symmetric-e-field}
-\mathbf{E} = E_r(r) \cdot \uvec{r}
-\ee
-
-By replacing \ref{spherically-symmetric-e-field} in \ref{gauss-law}, we can write
-\be\label{spherically-symmetric-flux}
-\oiint_A E_r(r) \cdot \uvec{r} \cdot \mathrm{d}\mathbf{A} =\frac{Q_{encl}}{\epsilon_0}
-\ee
-
-Considering a sphere centered at the location of the charged particle, \ref{spherically-symmetric-flux} becomes, in spherical coordinates,
-\be\label{spherically-symmetric-flux-2}
-\oiint_A E_r(r) \cdot \uvec{r} \cdot r^{2}\sin(\phi)\mathrm{d}\theta\mathrm{d}\phi\uvec{r} =\frac{q}{\epsilon_0}
-\ee
-from which
-\be
-\mathbf{E}=\frac{q}{4\pi\epsilon_0 r^{2}}\uvec{r}
-\ee
-which matches \ref{eq:electric-field-final}.
+\input{chapters/gausss-law/introduction.tex}
+\input{chapters/gausss-law/point-like-charge.tex}
+\input{chapters/gausss-law/infinite-wire.tex}
+\input{chapters/gausss-law/infinite-plane.tex}
 
 
-\subsection{Infinitely long, straight wire}
 
 
-Given a wire with charge density per unit of length $\lambda$ in empty space, due to the cylindrical symmetry of the system, the electric field $\mathbf{E}(r,\theta,z)$ cannot depend on $\theta$ and $z$. In addition, the electric field must be in the direction of $\uvec{\rho}$. Hence, we can write
-\be\label{cylindrically-symmetric-e-field}
-\mathbf{E} = E_{\rho}(\rho) \cdot \uvec{\rho}
-\ee
 
-By replacing \ref{spherically-symmetric-e-field} in \ref{gauss-law}, we can write
-\be\label{cylindrically-symmetric-flux}
-\oiint_A E_r(r) \cdot \uvec{r} \cdot \mathrm{d}\mathbf{A} =\frac{Q_{encl}}{\epsilon_0}
-\ee
-
-Considering a sphere centered at the location of the charged particle, \ref{spherically-symmetric-flux} becomes, in spherical coordinates,
-\be\label{cylindrically-symmetric-flux-2}
-\oiint_A E_r(r) \cdot \uvec{r} \cdot r^{2}\sin(\phi)\mathrm{d}\theta\mathrm{d}\phi\uvec{r} =\frac{q}{\epsilon_0}
-\ee
-from which
-\be
-\mathbf{E}=\frac{q}{2\pi\epsilon_0 r}\uvec{r}
-\ee
-which matches Coulomb's law.
 
