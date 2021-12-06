@@ -1,0 +1,25 @@
+\section{Dielectric ball}
+A dielectric ball with radius $R_{0}$ and uniform charge density per unit of volume $\rho$ is given. Due to
+the spherical symmetry of the system the electric field $E(r,\theta,\phi)$ cannot depend on $\theta$
+and $\phi$, so the electric field must be in the direction of $r$.
+\be\label{dielectric-ball-e-field}
+\mathbf{E} = E_r(r) \uvec{r}
+\ee
+By replacing \ref{dielectric-ball-e-field} in \ref{gauss-law}, we can write
+\be\label{ball-surface-flux}
+\oiint_A E_r(r) \uvec{r} \cdot \mathrm{d}\mathbf{A} =\frac{Q_{encl}}{\epsilon_0}
+\ee
+In spherical coordinates \ref{ball-surface-flux} becomes, 
+\be\label{ball-surface-flux-2}
+\oiint_A E_r(r)\uvec{r} \cdot \uvec{r}R_{0}^{2}\sin(\phi)\mathrm{d}\theta\mathrm{d}\phi =\frac{Q_{encl}}{\epsilon_0}
+\ee
+
+Charge enclosed by a sphere, $Q_{encl}=\frac{4}{3}\rho\pi r^3$, where $r$ is the radius of a Gaussian surface. We consider three cases: charge inside, on the surface or outside the sphere.
+
+
+Electric field calculated on the surface or outside
+\be
+\mathbf{E}=\frac{q}{4\pi\epsilon_0 r^{2}}\uvec{r}
+\ee
+
+From which we can see, that the value of electric field inside the sphere grows with the radius of the Gaussian surface until reaching its maximum on the surface and then continue to decrease as radius increases.
