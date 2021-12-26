@@ -18,14 +18,14 @@
   \axesthree{2}
   
   % VECTOR
-  \draw[->](O) -- node[below right] {$\mathbf{r}_{q}$} (r_q) ;
-  \draw[->](O) -- node[left] {$\mathbf{r}_{Q}$} (r_Q);
+  \draw[->](O) -- node[below right] {$\vec{r}_{q}$} (r_q) ;
+  \draw[->](O) -- node[left] {$\vec{r}_{Q}$} (r_Q);
   \node at (r_q)[circle,fill,inner sep=1.5pt]{}; 
   \node at (r_Q)[circle,fill,inner sep=1.5pt]{};
   \node at (r_q)[above]{$q$};
   \node at (r_Q)[above]{$Q$}; 
-  \draw[->](r_Q) --  node[above left] {$\mathbf{r}$} (r_q);
-  \draw[->][thick](r_q) -- +($(\xq*\s, \yq*\s,\zq*\s)-(\xQ*\s, \yQ*\s,\zQ*\s)$) node[above] {$\mathbf{F}_{q,Q}$};
+  \draw[->](r_Q) --  node[above left] {$\vec{r}$} (r_q);
+  \draw[->][thick](r_q) -- +($(\xq*\s, \yq*\s,\zq*\s)-(\xQ*\s, \yQ*\s,\zQ*\s)$) node[above] {$\vec{F}_{q,Q}$};
 
 \end{tikzpicture}
 	\caption{Electric force exerted by $Q$ on $q$.} \label{fig:two-point-charges}

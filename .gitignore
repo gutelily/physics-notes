@@ -6,3 +6,4 @@
 *.pdf
 *.gz
 __latexindent_temp.tex
+.DS_Store

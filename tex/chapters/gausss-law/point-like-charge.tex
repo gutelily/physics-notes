@@ -1,13 +1,13 @@
 \section{Point-like charge}
-Given a particle with charge $q$ in empty space, due to the spherical symmetry of the system, the electric field $\mathbf{E}(r,\theta,\phi)$ 
+Given a particle with charge $q$ in empty space, due to the spherical symmetry of the system, the electric field $\vec{E}(r,\theta,\phi)$ 
 cannot depend on $\theta$ and $\phi$. In addition, the electric field must be in the direction of $\uvec{r}$. Hence, we can write
 \be\label{spherically-symmetric-e-field}
-\mathbf{E} = E_r(r) \uvec{r}
+\vec{E} = E_r(r) \uvec{r}
 \ee
 
 By replacing \ref{spherically-symmetric-e-field} in \ref{gauss-law}, we can write
 \be\label{spherically-symmetric-flux}
-\oiint_A E_r(r) \uvec{r} \cdot \mathrm{d}\mathbf{A} =\frac{Q_{encl}}{\epsilon_0}
+\oiint_A E_r(r) \uvec{r} \cdot \mathrm{d}\vec{A} =\frac{Q_{encl}}{\epsilon_0}
 \ee
 
 Considering a sphere centered at the location of the charged particle, \ref{spherically-symmetric-flux} becomes, in spherical coordinates,
@@ -16,6 +16,6 @@ Considering a sphere centered at the location of the charged particle, \ref{sphe
 \ee
 from which, due to the fact that $\uvec{n}=\uvec{r}$
 \be
-\mathbf{E}=\frac{q}{4\pi\epsilon_0 r^{2}}\uvec{r}
+\vec{E}=\frac{q}{4\pi\epsilon_0 r^{2}}\uvec{r}
 \ee
 which matches \ref{eq:electric-field-final}.
