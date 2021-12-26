@@ -1,0 +1,30 @@
+\begin{figure}
+	\centering
+\tdplotsetmaincoords{60}{110}
+\begin{tikzpicture}[scale=2,tdplot_main_coords]\tikzset{>=latex}
+  
+  % VARIABLES
+  \def\xq{1.6}
+  \def\yq{1.6}
+  \def\zq{2.3}
+  \def\xQ{0}
+  \def\yQ{0}
+  \def\zQ{1.5}
+  \def\s{0.3}
+  \coordinate (r_q) at (\xq,\yq,\zq);
+  \coordinate (r_Q) at (\xQ,\yQ,\zQ);
+  % AXES
+  \coordinate (O) at (0,0,0);
+  \axesthree{3}
+  
+  % VECTOR
+  \draw[->](O) -- node[below] {$\vec{r}_{0}$} (r_q);
+  \draw[->](0,0,\zq) -- node[left] {$\ell$} (0,0,\zQ) node[circle,fill,inner sep=1.5pt]{};
+  \draw[->](O) -- (0,0,\zq) node[left] {$z_{0}$};
+  \draw[->](O) -- node[left]{$z_{0}+\ell$} (0,0,\zQ);
+  \draw[->](r_Q) --  node[above left] {$\vec{r}$} (r_q);
+  \draw[->][thick](r_q) -- +($(\xq*\s, \yq*\s,\zq*\s)-(\xQ*\s, \yQ*\s,\zQ*\s)$) node[above] {$\total{\vec{E}}$};
+
+\end{tikzpicture}
+	\caption{Infinitely long wire with uniform charge density.} \label{fig:infinite-wire}
+\end{figure}
