@@ -1,4 +1,4 @@
-\begin{figure}
+\begin{figure}[!htbp]
 	\centering
 % 3D AXIS with spherical coordinates
 \tdplotsetmaincoords{60}{110}
@@ -15,12 +15,12 @@
   \coordinate (r_q) at (\xq,\yq,\zq);
   \coordinate (r_Q) at (\xQ,\yQ,\zQ);
   % AXES
-  \coordinate (O) at (0,0,0);
-  \axesthree{2}
+  % \coordinate (O) at (0,0,0);
+  % \axesthree{2}
   
   % VECTORS
-  \draw[->](O) -- node[below right] {$\vec{r}_{q}$} (r_q) ;
-  \draw[->](O) -- node[left] {$\vec{r}_{Q}$} (r_Q);
+  % \draw[->](O) -- node[below right] {$\vec{r}_{q}$} (r_q) ;
+  % \draw[->](O) -- node[left] {$\vec{r}_{Q}$} (r_Q);
   \draw[->](r_Q) --  node[above] {$\vec{r}$} (r_q);
   \node at (r_Q)[circle,fill,inner sep=1.5pt]{};
   \node at (r_Q)[above]{$Q$};
